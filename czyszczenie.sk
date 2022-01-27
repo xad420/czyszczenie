@@ -1,0 +1,55 @@
+options:
+
+		tag: xad
+
+		time: 5 real minutes
+
+		message: §bXAD.PL &8» &7Przedmioty zostana usuniete za &f10 sekund
+
+		message1: §bXAD.PL &8» &7Usuwanie przedmiotow za &f5
+
+		message2: §bXAD.PL &8» &7Usuwanie przedmiotow za &f4
+
+		message3: §bXAD.PL &8» &7Usuwanie przedmiotow za &f3
+
+		message4: §bXAD.PL &8» &7Usuwanie przedmiotow za &f2
+
+		message5: §bXAD.PL &8» &7Usuwanie przedmiotow za &f1
+
+		message-finish: §bXAD.PL &8» &7Wszystkie &fitemy &7z ziemi zostaly &fusuniete&7!
+
+	
+
+every {@time}:
+
+	broadcast "{@message}"
+
+	wait 8 seconds
+
+	broadcast "{@message1}"
+
+	wait 1 seconds
+
+	broadcast "{@message2}"
+
+	wait 1 seconds
+
+	broadcast "{@message3}"
+
+	wait 1 seconds
+
+	broadcast "{@message4}"
+
+	wait 1 seconds
+
+	broadcast "{@message5}"
+
+	wait 1 seconds
+
+	broadcast "{@message-finish}"
+
+	execute console command "stoplag"
+
+        wait 1 seconds
+
+	execute console command "stoplag -c"
